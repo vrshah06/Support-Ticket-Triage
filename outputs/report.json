@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-21 09:54:41 UTC",
+    "generated_at": "2026-11-21 09:56:47 UTC",
     "model": "gpt-4.1-mini",
     "confidence_threshold": 0.8
   },
@@ -12,7 +12,7 @@
     "human_reviewed_count": 0,
     "failed_tickets": 0,
     "urgent_tickets": 21,
-    "processing_duration_seconds": 0.02,
+    "processing_duration_seconds": 0.13,
     "api_error_count": 0
   },
   "distributions": {

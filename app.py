@@ -107,7 +107,7 @@ user_api_key = st.sidebar.text_input(
     type="password",
     help="Leave blank to use mock/heuristic classifier for offline demo",
 )
-if user_api_key != st.session_state.api_key:
+if user_api_key != st.session_state.api_key or (user_api_key and getattr(st.session_state.processor.classifier, "_client", None) is None):
     st.session_state.api_key = user_api_key
     st.session_state.processor.classifier.set_api_key(user_api_key)
 
