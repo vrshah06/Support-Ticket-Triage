@@ -208,7 +208,7 @@ if nav_choice == "📊 Dashboard":
                 hole=0.45,
             )
             fig_pri.update_layout(margin=dict(t=20, b=20, l=20, r=20))
-            st.plotly_chart(fig_pri, use_container_width=True)
+            st.plotly_chart(fig_pri, width="stretch")
 
         with ch2:
             st.subheader("Category Distribution")
@@ -222,7 +222,7 @@ if nav_choice == "📊 Dashboard":
                 color_discrete_sequence=px.colors.qualitative.Plotly,
             )
             fig_cat.update_layout(margin=dict(t=20, b=20, l=20, r=20))
-            st.plotly_chart(fig_cat, use_container_width=True)
+            st.plotly_chart(fig_cat, width="stretch")
 
         st.subheader("Triage Routing Status")
         status_counts = {
@@ -245,7 +245,7 @@ if nav_choice == "📊 Dashboard":
                 "Failed": "#d32f2f",
             },
         )
-        st.plotly_chart(fig_status, use_container_width=True)
+        st.plotly_chart(fig_status, width="stretch")
 
 
 # ==============================================================================
@@ -272,7 +272,7 @@ elif nav_choice == "📂 Upload Tickets":
 
     with col2:
         st.markdown("#### Quick Load")
-        if st.button("🔄 Reset to 300 Candidate Dataset", use_container_width=True):
+        if st.button("🔄 Reset to 300 Candidate Dataset", width="stretch"):
             if os.path.exists(candidate_csv):
                 with open(candidate_csv, "r", encoding="utf-8") as f:
                     valid, errors = st.session_state.processor.load_and_validate_csv(f)
@@ -286,7 +286,7 @@ elif nav_choice == "📂 Upload Tickets":
         st.markdown("---")
         st.subheader("Dataset Preview")
         preview_df = pd.DataFrame(st.session_state.processor.tickets).head(10)
-        st.dataframe(preview_df, use_container_width=True)
+        st.dataframe(preview_df, width="stretch")
 
 
 # ==============================================================================
@@ -304,7 +304,7 @@ elif nav_choice == "⚡ Process Tickets":
     if total_tickets == 0:
         st.warning("Please upload or load tickets in '📂 Upload Tickets' before processing.")
     else:
-        if st.button("🚀 Run Triage Pipeline", type="primary", use_container_width=True):
+        if st.button("🚀 Run Triage Pipeline", type="primary", width="stretch"):
             progress_bar = st.progress(0.0)
             status_text = st.empty()
 
@@ -393,7 +393,7 @@ elif nav_choice == "📋 All Tickets":
             "final_category",
             "final_priority",
         ]
-        st.dataframe(filtered[display_cols], use_container_width=True)
+        st.dataframe(filtered[display_cols], width="stretch")
 
         # Detailed ticket inspector
         st.markdown("---")
@@ -487,7 +487,7 @@ elif nav_choice == "👤 Human Review Queue":
                 df_rev = pd.DataFrame(reviewed_tickets)[
                     ["id", "subject", "ai_category", "ai_priority", "human_category", "human_priority", "status"]
                 ]
-                st.dataframe(df_rev, use_container_width=True)
+                st.dataframe(df_rev, width="stretch")
 
 
 # ==============================================================================
@@ -523,10 +523,10 @@ elif nav_choice == "💾 Reports & Downloads":
                 file_name="results.csv",
                 mime="text/csv",
                 type="primary",
-                use_container_width=True,
+                width="stretch",
             )
             df_preview = pd.read_csv(res_path)
-            st.dataframe(df_preview.head(15), use_container_width=True)
+            st.dataframe(df_preview.head(15), width="stretch")
         else:
             st.warning("results.csv has not been generated yet. Please run triage first.")
 
@@ -543,7 +543,7 @@ elif nav_choice == "💾 Reports & Downloads":
                 data=json_str.encode("utf-8"),
                 file_name="report.json",
                 mime="application/json",
-                use_container_width=True,
+                width="stretch",
             )
             st.json(json.loads(json_str))
         else:
