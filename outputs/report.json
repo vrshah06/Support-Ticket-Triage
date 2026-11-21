@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-21 09:30:46 UTC",
+    "model": "gpt-4.1-mini",
+    "confidence_threshold": 0.8
+  },
+  "metrics": {
+    "total_tickets": 300,
+    "successfully_classified": 300,
+    "automatically_classified": 119,
+    "human_review_count": 181,
+    "human_reviewed_count": 0,
+    "failed_tickets": 0,
+    "urgent_tickets": 21,
+    "processing_duration_seconds": 0.02,
+    "api_error_count": 0
+  },
+  "distributions": {
+    "priority_distribution": {
+      "Low": 34,
+      "Medium": 228,
+      "High": 16,
+      "Urgent": 21
+    },
+    "category_distribution": {
+      "Billing": 77,
+      "Technical": 37,
+      "Account": 49,
+      "Shipping": 43,
+      "Other": 93,
+      "Unassigned": 1
+    }
+  },
+  "accuracy_notice": "NOTE ON ACCURACY: The dataset does not contain ground-truth category or priority labels. Therefore, true classification accuracy (e.g., precision, recall, F1) cannot be mathematically verified. The metrics reported above represent model predictions and human-in-the-loop triage decisions, not verified ground-truth accuracy."
+}
