@@ -352,23 +352,28 @@ class TicketProcessor:
             if needs_review == "yes":
                 # If human has reviewed it, use confirmed labels; otherwise fill placeholder message
                 if res.get("is_human_reviewed", False):
-                    cat = res.get("final_category") or empty_placeholder
-                    pri = res.get("final_priority") or empty_placeholder
+                    cat = res.get("final_category")
+                    pri = res.get("final_priority")
                 else:
-                    cat = res.get("final_category") or empty_placeholder
-                    pri = res.get("final_priority") or empty_placeholder
+                    cat = empty_placeholder
+                    pri = empty_placeholder
             else:
-                cat = res.get("final_category") or res.get("ai_category") or empty_placeholder
-                pri = res.get("final_priority") or res.get("ai_priority") or empty_placeholder
+                cat = res.get("final_category") or res.get("ai_category")
+                pri = res.get("final_priority") or res.get("ai_priority")
 
-            # Ensure neither column is left empty
-            cat_val = str(cat).strip() if cat else empty_placeholder
-            pri_val = str(pri).strip() if pri else empty_placeholder
+            # Ensure neither column is left empty, None, or NaN
+            cat_str = str(cat).strip() if cat is not None else ""
+            pri_str = str(pri).strip() if pri is not None else ""
+
+            if not cat_str or cat_str.lower() in ("nan", "none", ""):
+                cat_str = empty_placeholder
+            if not pri_str or pri_str.lower() in ("nan", "none", ""):
+                pri_str = empty_placeholder
 
             rows.append({
                 "id": tid,
-                "category": cat_val if cat_val else empty_placeholder,
-                "priority": pri_val if pri_val else empty_placeholder,
+                "category": cat_str,
+                "priority": pri_str,
                 "needs_review": needs_review,
             })
 
