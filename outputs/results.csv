@@ -2,300 +2,300 @@ id,category,priority,needs_review
 T-0001,Shipping,Medium,no
 T-0002,Billing,Medium,no
 T-0003,Other,Low,no
-T-0004,,,yes
+T-0004,Pending Review,Pending Review,yes
 T-0005,Account,Medium,no
 T-0006,Account,Medium,no
-T-0007,,,yes
-T-0008,,,yes
-T-0009,,,yes
+T-0007,Pending Review,Pending Review,yes
+T-0008,Pending Review,Pending Review,yes
+T-0009,Pending Review,Pending Review,yes
 T-0010,Technical,High,no
-T-0011,,,yes
-T-0012,,,yes
+T-0011,Pending Review,Pending Review,yes
+T-0012,Pending Review,Pending Review,yes
 T-0013,Billing,Medium,no
-T-0014,,,yes
-T-0015,,,yes
-T-0016,,,yes
-T-0017,,,yes
-T-0018,,,yes
-T-0019,,,yes
-T-0020,,,yes
+T-0014,Pending Review,Pending Review,yes
+T-0015,Pending Review,Pending Review,yes
+T-0016,Pending Review,Pending Review,yes
+T-0017,Pending Review,Pending Review,yes
+T-0018,Pending Review,Pending Review,yes
+T-0019,Pending Review,Pending Review,yes
+T-0020,Pending Review,Pending Review,yes
 T-0021,Shipping,Medium,no
-T-0022,,,yes
-T-0023,,,yes
+T-0022,Pending Review,Pending Review,yes
+T-0023,Pending Review,Pending Review,yes
 T-0024,Billing,Medium,no
 T-0025,Account,High,no
-T-0026,,,yes
+T-0026,Pending Review,Pending Review,yes
 T-0027,Shipping,Medium,no
-T-0028,,,yes
+T-0028,Pending Review,Pending Review,yes
 T-0029,Billing,Medium,no
 T-0030,Billing,Medium,no
-T-0031,,,yes
-T-0032,,,yes
-T-0033,,,yes
+T-0031,Pending Review,Pending Review,yes
+T-0032,Pending Review,Pending Review,yes
+T-0033,Pending Review,Pending Review,yes
 T-0034,Shipping,Medium,no
-T-0035,,,yes
-T-0036,,,yes
-T-0037,,,yes
-T-0038,,,yes
-T-0039,,,yes
-T-0040,,,yes
-T-0041,,,yes
+T-0035,Pending Review,Pending Review,yes
+T-0036,Pending Review,Pending Review,yes
+T-0037,Pending Review,Pending Review,yes
+T-0038,Pending Review,Pending Review,yes
+T-0039,Pending Review,Pending Review,yes
+T-0040,Pending Review,Pending Review,yes
+T-0041,Pending Review,Pending Review,yes
 T-0042,Shipping,Medium,no
 T-0043,Other,Low,no
-T-0044,,,yes
-T-0045,,,yes
+T-0044,Pending Review,Pending Review,yes
+T-0045,Pending Review,Pending Review,yes
 T-0046,Billing,Low,no
-T-0047,,,yes
-T-0048,,,yes
-T-0049,,,yes
+T-0047,Pending Review,Pending Review,yes
+T-0048,Pending Review,Pending Review,yes
+T-0049,Pending Review,Pending Review,yes
 T-0050,Account,Medium,no
-T-0051,,,yes
-T-0052,,,yes
-T-0053,,,yes
-T-0054,,,yes
+T-0051,Pending Review,Pending Review,yes
+T-0052,Pending Review,Pending Review,yes
+T-0053,Pending Review,Pending Review,yes
+T-0054,Pending Review,Pending Review,yes
 T-0055,Shipping,Medium,no
-T-0056,,,yes
+T-0056,Pending Review,Pending Review,yes
 T-0057,Technical,High,no
-T-0058,,,yes
-T-0059,,,yes
-T-0060,,,yes
-T-0061,,,yes
-T-0062,,,yes
-T-0063,,,yes
+T-0058,Pending Review,Pending Review,yes
+T-0059,Pending Review,Pending Review,yes
+T-0060,Pending Review,Pending Review,yes
+T-0061,Pending Review,Pending Review,yes
+T-0062,Pending Review,Pending Review,yes
+T-0063,Pending Review,Pending Review,yes
 T-0064,Billing,Low,no
-T-0065,,,yes
-T-0066,,,yes
+T-0065,Pending Review,Pending Review,yes
+T-0066,Pending Review,Pending Review,yes
 T-0067,Account,Medium,no
 T-0068,Account,Medium,no
-T-0069,,,yes
-T-0070,,,yes
+T-0069,Pending Review,Pending Review,yes
+T-0070,Pending Review,Pending Review,yes
 T-0071,Billing,Medium,no
-T-0072,,,yes
-T-0073,,,yes
-T-0074,,,yes
-T-0075,,,yes
+T-0072,Pending Review,Pending Review,yes
+T-0073,Pending Review,Pending Review,yes
+T-0074,Pending Review,Pending Review,yes
+T-0075,Pending Review,Pending Review,yes
 T-0076,Account,Medium,no
-T-0077,,,yes
-T-0078,,,yes
-T-0079,,,yes
+T-0077,Pending Review,Pending Review,yes
+T-0078,Pending Review,Pending Review,yes
+T-0079,Pending Review,Pending Review,yes
 T-0080,Other,Low,no
-T-0081,,,yes
+T-0081,Pending Review,Pending Review,yes
 T-0082,Technical,Medium,no
-T-0083,,,yes
-T-0084,,,yes
-T-0085,,,yes
-T-0086,,,yes
-T-0087,,,yes
-T-0088,,,yes
+T-0083,Pending Review,Pending Review,yes
+T-0084,Pending Review,Pending Review,yes
+T-0085,Pending Review,Pending Review,yes
+T-0086,Pending Review,Pending Review,yes
+T-0087,Pending Review,Pending Review,yes
+T-0088,Pending Review,Pending Review,yes
 T-0089,Account,Medium,no
 T-0090,Account,Medium,no
-T-0091,,,yes
+T-0091,Pending Review,Pending Review,yes
 T-0092,Shipping,Medium,no
-T-0093,,,yes
-T-0094,,,yes
+T-0093,Pending Review,Pending Review,yes
+T-0094,Pending Review,Pending Review,yes
 T-0095,Shipping,Medium,no
 T-0096,Account,High,no
 T-0097,Billing,Low,no
-T-0098,,,yes
-T-0099,,,yes
+T-0098,Pending Review,Pending Review,yes
+T-0099,Pending Review,Pending Review,yes
 T-0100,Shipping,Medium,no
-T-0101,,,yes
-T-0102,,,yes
+T-0101,Pending Review,Pending Review,yes
+T-0102,Pending Review,Pending Review,yes
 T-0103,Billing,Medium,no
 T-0104,Shipping,Medium,no
-T-0105,,,yes
+T-0105,Pending Review,Pending Review,yes
 T-0106,Billing,Medium,no
-T-0107,,,yes
+T-0107,Pending Review,Pending Review,yes
 T-0108,Shipping,High,no
 T-0109,Technical,High,no
 T-0110,Billing,Medium,no
-T-0111,,,yes
-T-0112,,,yes
-T-0113,,,yes
-T-0114,,,yes
+T-0111,Pending Review,Pending Review,yes
+T-0112,Pending Review,Pending Review,yes
+T-0113,Pending Review,Pending Review,yes
+T-0114,Pending Review,Pending Review,yes
 T-0115,Billing,Low,no
-T-0116,,,yes
-T-0117,,,yes
-T-0118,,,yes
+T-0116,Pending Review,Pending Review,yes
+T-0117,Pending Review,Pending Review,yes
+T-0118,Pending Review,Pending Review,yes
 T-0119,Billing,Medium,no
-T-0120,,,yes
-T-0121,,,yes
-T-0122,,,yes
-T-0123,,,yes
-T-0124,,,yes
+T-0120,Pending Review,Pending Review,yes
+T-0121,Pending Review,Pending Review,yes
+T-0122,Pending Review,Pending Review,yes
+T-0123,Pending Review,Pending Review,yes
+T-0124,Pending Review,Pending Review,yes
 T-0125,Technical,Medium,no
-T-0126,,,yes
-T-0127,,,yes
+T-0126,Pending Review,Pending Review,yes
+T-0127,Pending Review,Pending Review,yes
 T-0128,Shipping,Medium,no
-T-0129,,,yes
-T-0130,,,yes
+T-0129,Pending Review,Pending Review,yes
+T-0130,Pending Review,Pending Review,yes
 T-0131,Billing,Medium,no
-T-0132,,,yes
-T-0133,,,yes
+T-0132,Pending Review,Pending Review,yes
+T-0133,Pending Review,Pending Review,yes
 T-0134,Shipping,Medium,no
-T-0135,,,yes
+T-0135,Pending Review,Pending Review,yes
 T-0136,Technical,Medium,no
 T-0137,Billing,Low,no
-T-0138,,,yes
+T-0138,Pending Review,Pending Review,yes
 T-0139,Account,Medium,no
-T-0140,,,yes
-T-0141,,,yes
+T-0140,Pending Review,Pending Review,yes
+T-0141,Pending Review,Pending Review,yes
 T-0142,Technical,High,no
 T-0143,Billing,Low,no
-T-0144,,,yes
-T-0145,,,yes
+T-0144,Pending Review,Pending Review,yes
+T-0145,Pending Review,Pending Review,yes
 T-0146,Account,Medium,no
-T-0147,,,yes
+T-0147,Pending Review,Pending Review,yes
 T-0148,Account,Medium,no
 T-0149,Billing,Low,no
 T-0150,Shipping,Medium,no
-T-0151,,,yes
-T-0152,,,yes
-T-0153,,,yes
-T-0154,,,yes
+T-0151,Pending Review,Pending Review,yes
+T-0152,Pending Review,Pending Review,yes
+T-0153,Pending Review,Pending Review,yes
+T-0154,Pending Review,Pending Review,yes
 T-0155,Account,Medium,no
-T-0156,,,yes
-T-0157,,,yes
-T-0158,,,yes
-T-0159,,,yes
-T-0160,,,yes
-T-0161,,,yes
+T-0156,Pending Review,Pending Review,yes
+T-0157,Pending Review,Pending Review,yes
+T-0158,Pending Review,Pending Review,yes
+T-0159,Pending Review,Pending Review,yes
+T-0160,Pending Review,Pending Review,yes
+T-0161,Pending Review,Pending Review,yes
 T-0162,Billing,Low,no
 T-0163,Billing,Medium,no
-T-0164,,,yes
+T-0164,Pending Review,Pending Review,yes
 T-0165,Technical,Medium,no
-T-0166,,,yes
-T-0167,,,yes
+T-0166,Pending Review,Pending Review,yes
+T-0167,Pending Review,Pending Review,yes
 T-0168,Account,Medium,no
-T-0169,,,yes
+T-0169,Pending Review,Pending Review,yes
 T-0170,Shipping,Medium,no
-T-0171,,,yes
-T-0172,,,yes
+T-0171,Pending Review,Pending Review,yes
+T-0172,Pending Review,Pending Review,yes
 T-0173,Billing,Low,no
-T-0174,,,yes
-T-0175,,,yes
+T-0174,Pending Review,Pending Review,yes
+T-0175,Pending Review,Pending Review,yes
 T-0176,Shipping,Medium,no
 T-0177,Billing,Low,no
-T-0178,,,yes
-T-0179,,,yes
+T-0178,Pending Review,Pending Review,yes
+T-0179,Pending Review,Pending Review,yes
 T-0180,Billing,Medium,no
 T-0181,Billing,Low,no
 T-0182,Shipping,Medium,no
 T-0183,Billing,Medium,no
-T-0184,,,yes
-T-0185,,,yes
+T-0184,Pending Review,Pending Review,yes
+T-0185,Pending Review,Pending Review,yes
 T-0186,Billing,Medium,no
 T-0187,Billing,Low,no
 T-0188,Account,Medium,no
 T-0189,Billing,Medium,no
 T-0190,Billing,Medium,no
 T-0191,Shipping,Medium,no
-T-0192,,,yes
-T-0193,,,yes
-T-0194,,,yes
-T-0195,,,yes
-T-0196,,,yes
-T-0197,,,yes
-T-0198,,,yes
-T-0199,,,yes
+T-0192,Pending Review,Pending Review,yes
+T-0193,Pending Review,Pending Review,yes
+T-0194,Pending Review,Pending Review,yes
+T-0195,Pending Review,Pending Review,yes
+T-0196,Pending Review,Pending Review,yes
+T-0197,Pending Review,Pending Review,yes
+T-0198,Pending Review,Pending Review,yes
+T-0199,Pending Review,Pending Review,yes
 T-0200,Shipping,Medium,no
-T-0201,,,yes
+T-0201,Pending Review,Pending Review,yes
 T-0202,Billing,Medium,no
 T-0203,Billing,Low,no
 T-0204,Shipping,Medium,no
-T-0205,,,yes
+T-0205,Pending Review,Pending Review,yes
 T-0206,Billing,Medium,no
 T-0207,Technical,High,no
-T-0208,,,yes
+T-0208,Pending Review,Pending Review,yes
 T-0209,Technical,High,no
-T-0210,,,yes
+T-0210,Pending Review,Pending Review,yes
 T-0211,Account,Medium,no
-T-0212,,,yes
+T-0212,Pending Review,Pending Review,yes
 T-0213,Billing,Medium,no
 T-0214,Shipping,Medium,no
-T-0215,,,yes
-T-0216,,,yes
+T-0215,Pending Review,Pending Review,yes
+T-0216,Pending Review,Pending Review,yes
 T-0217,Shipping,Medium,no
 T-0218,Billing,Medium,no
-T-0219,,,yes
-T-0220,,,yes
-T-0221,,,yes
+T-0219,Pending Review,Pending Review,yes
+T-0220,Pending Review,Pending Review,yes
+T-0221,Pending Review,Pending Review,yes
 T-0222,Shipping,High,no
 T-0223,Shipping,Medium,no
-T-0224,,,yes
+T-0224,Pending Review,Pending Review,yes
 T-0225,Shipping,Medium,no
 T-0226,Billing,Medium,no
-T-0227,,,yes
-T-0228,,,yes
-T-0229,,,yes
-T-0230,,,yes
-T-0231,,,yes
+T-0227,Pending Review,Pending Review,yes
+T-0228,Pending Review,Pending Review,yes
+T-0229,Pending Review,Pending Review,yes
+T-0230,Pending Review,Pending Review,yes
+T-0231,Pending Review,Pending Review,yes
 T-0232,Technical,High,no
-T-0233,,,yes
+T-0233,Pending Review,Pending Review,yes
 T-0234,Billing,Medium,no
 T-0235,Billing,Medium,no
-T-0236,,,yes
-T-0237,,,yes
+T-0236,Pending Review,Pending Review,yes
+T-0237,Pending Review,Pending Review,yes
 T-0238,Billing,Medium,no
-T-0239,,,yes
+T-0239,Pending Review,Pending Review,yes
 T-0240,Shipping,Medium,no
-T-0241,,,yes
-T-0242,,,yes
-T-0243,,,yes
-T-0244,,,yes
-T-0245,,,yes
+T-0241,Pending Review,Pending Review,yes
+T-0242,Pending Review,Pending Review,yes
+T-0243,Pending Review,Pending Review,yes
+T-0244,Pending Review,Pending Review,yes
+T-0245,Pending Review,Pending Review,yes
 T-0246,Billing,Medium,no
-T-0247,,,yes
-T-0248,,,yes
-T-0249,,,yes
-T-0250,,,yes
-T-0251,,,yes
-T-0252,,,yes
-T-0253,,,yes
+T-0247,Pending Review,Pending Review,yes
+T-0248,Pending Review,Pending Review,yes
+T-0249,Pending Review,Pending Review,yes
+T-0250,Pending Review,Pending Review,yes
+T-0251,Pending Review,Pending Review,yes
+T-0252,Pending Review,Pending Review,yes
+T-0253,Pending Review,Pending Review,yes
 T-0254,Shipping,Medium,no
-T-0255,,,yes
-T-0256,,,yes
+T-0255,Pending Review,Pending Review,yes
+T-0256,Pending Review,Pending Review,yes
 T-0257,Shipping,Medium,no
-T-0258,,,yes
-T-0259,,,yes
+T-0258,Pending Review,Pending Review,yes
+T-0259,Pending Review,Pending Review,yes
 T-0260,Billing,Low,no
-T-0261,,,yes
-T-0262,,,yes
-T-0263,,,yes
+T-0261,Pending Review,Pending Review,yes
+T-0262,Pending Review,Pending Review,yes
+T-0263,Pending Review,Pending Review,yes
 T-0264,Shipping,Medium,no
-T-0265,,,yes
+T-0265,Pending Review,Pending Review,yes
 T-0266,Shipping,Medium,no
 T-0267,Technical,Medium,no
-T-0268,,,yes
+T-0268,Pending Review,Pending Review,yes
 T-0269,Account,Medium,no
 T-0270,Account,Medium,no
 T-0271,Shipping,Medium,no
 T-0272,Billing,Medium,no
-T-0273,,,yes
-T-0274,,,yes
-T-0275,,,yes
+T-0273,Pending Review,Pending Review,yes
+T-0274,Pending Review,Pending Review,yes
+T-0275,Pending Review,Pending Review,yes
 T-0276,Shipping,High,no
-T-0277,,,yes
-T-0278,,,yes
+T-0277,Pending Review,Pending Review,yes
+T-0278,Pending Review,Pending Review,yes
 T-0279,Billing,Low,no
-T-0280,,,yes
+T-0280,Pending Review,Pending Review,yes
 T-0281,Billing,Medium,no
 T-0282,Billing,Medium,no
-T-0283,,,yes
-T-0284,,,yes
+T-0283,Pending Review,Pending Review,yes
+T-0284,Pending Review,Pending Review,yes
 T-0285,Billing,Medium,no
 T-0286,Shipping,Medium,no
-T-0287,,,yes
+T-0287,Pending Review,Pending Review,yes
 T-0288,Other,Low,no
 T-0289,Billing,Medium,no
 T-0290,Shipping,Medium,no
 T-0291,Account,Medium,no
 T-0292,Technical,High,no
-T-0293,,,yes
+T-0293,Pending Review,Pending Review,yes
 T-0294,Account,Medium,no
-T-0295,,,yes
-T-0296,,,yes
-T-0297,,,yes
-T-0298,,,yes
+T-0295,Pending Review,Pending Review,yes
+T-0296,Pending Review,Pending Review,yes
+T-0297,Pending Review,Pending Review,yes
+T-0298,Pending Review,Pending Review,yes
 T-0299,Billing,Medium,no
-T-0300,,,yes
+T-0300,Pending Review,Pending Review,yes

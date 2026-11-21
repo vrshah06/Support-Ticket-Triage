@@ -325,7 +325,9 @@ class TicketProcessor:
             "api_error_count": self.api_error_count,
         }
 
-    def export_results_csv(self, output_path: str) -> pd.DataFrame:
+    def export_results_csv(
+        self, output_path: str, empty_placeholder: str = "Pending Review"
+    ) -> pd.DataFrame:
         """
         Generate results.csv matching assessment specifications:
         EXACTLY four columns in this order:
@@ -335,7 +337,8 @@ class TicketProcessor:
         1. Generate exactly one row per input ticket.
         2. Preserve the original ticket ID in original input order.
         3. needs_review must contain only "yes" or "no".
-        4. If a ticket requires human review, category and priority may be empty.
+        4. If category or priority is not given or pending human review,
+           fills with appropriate placeholder message ("Pending Review").
            If a human has confirmed/reviewed it, the human-corrected labels are used.
         5. Do not add any extra columns to results.csv.
         """
@@ -347,21 +350,25 @@ class TicketProcessor:
             needs_review = res.get("needs_review", "yes")
 
             if needs_review == "yes":
-                # If human has reviewed it, use confirmed labels; otherwise leave empty per Rule 4
+                # If human has reviewed it, use confirmed labels; otherwise fill placeholder message
                 if res.get("is_human_reviewed", False):
-                    cat = res.get("final_category") or ""
-                    pri = res.get("final_priority") or ""
+                    cat = res.get("final_category") or empty_placeholder
+                    pri = res.get("final_priority") or empty_placeholder
                 else:
-                    cat = ""
-                    pri = ""
+                    cat = res.get("final_category") or empty_placeholder
+                    pri = res.get("final_priority") or empty_placeholder
             else:
-                cat = res.get("final_category") or res.get("ai_category") or ""
-                pri = res.get("final_priority") or res.get("ai_priority") or ""
+                cat = res.get("final_category") or res.get("ai_category") or empty_placeholder
+                pri = res.get("final_priority") or res.get("ai_priority") or empty_placeholder
+
+            # Ensure neither column is left empty
+            cat_val = str(cat).strip() if cat else empty_placeholder
+            pri_val = str(pri).strip() if pri else empty_placeholder
 
             rows.append({
                 "id": tid,
-                "category": cat,
-                "priority": pri,
+                "category": cat_val if cat_val else empty_placeholder,
+                "priority": pri_val if pri_val else empty_placeholder,
                 "needs_review": needs_review,
             })
 

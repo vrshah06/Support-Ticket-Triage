@@ -224,10 +224,11 @@ def test_export_results_csv_schema_and_rows(tmp_path, mock_classifier):
     assert row1["needs_review"] == "no"
     assert row1["category"] == "Shipping"
     assert row1["priority"] == "Medium"
-    # 6. T-0002 was review and unreviewed -> category and priority empty per Rule 4
+    # 6. T-0002 was review and unreviewed -> filled with placeholder message
     row2 = df[df["id"] == "T-0002"].iloc[0]
     assert row2["needs_review"] == "yes"
-    assert pd.isna(row2["category"]) or row2["category"] == ""
+    assert row2["category"] == "Pending Review"
+    assert row2["priority"] == "Pending Review"
 
 
 def test_export_report_json_format(tmp_path, mock_classifier):
