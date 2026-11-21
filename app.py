@@ -17,7 +17,7 @@ from config import (
     DEFAULT_MODEL,
     OPENAI_API_KEY,
 )
-from classifier import TicketClassifier
+from classifier import TicketClassifier, OPENAI_AVAILABLE
 from processor import TicketProcessor
 
 # Set Streamlit Page Configuration
@@ -129,8 +129,20 @@ conf_threshold = st.sidebar.slider(
 )
 st.session_state.confidence_threshold = conf_threshold
 
+if not OPENAI_AVAILABLE:
+    st.sidebar.warning(
+        "⚠️ 'openai' package is not installed in the currently running Python environment.\n"
+        "Running in Heuristic / Offline mode.\n"
+        "To enable OpenAI API, run:\n`pip install openai`"
+    )
+    mode_text = "🟡 Heuristic / Offline (openai uninstalled)"
+elif st.session_state.api_key:
+    mode_text = "🟢 OpenAI API"
+else:
+    mode_text = "🟡 Heuristic / Offline (No API key set)"
+
 st.sidebar.info(
-    f"Active Mode: {'🟢 OpenAI API' if st.session_state.api_key else '🟡 Heuristic / Offline'}\n"
+    f"Active Mode: {mode_text}\n\n"
     f"Threshold: {conf_threshold:.2f}"
 )
 

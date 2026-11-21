@@ -1,8 +1,16 @@
 import re
 import json
+import logging
 from typing import Optional, Literal
 from pydantic import BaseModel, Field
-import openai
+
+try:
+    import openai
+    OPENAI_AVAILABLE = True
+except ImportError:
+    openai = None
+    OPENAI_AVAILABLE = False
+
 from config import (
     ALLOWED_CATEGORIES,
     ALLOWED_PRIORITIES,
@@ -10,6 +18,8 @@ from config import (
     MAX_BODY_CHARS,
     CRITICAL_KEYWORDS,
 )
+
+logger = logging.getLogger(__name__)
 
 CategoryType = Literal["Billing", "Technical", "Account", "Shipping", "Other"]
 PriorityType = Literal["Low", "Medium", "High", "Urgent"]
@@ -66,13 +76,20 @@ class TicketClassifier:
     def __init__(self, api_key: Optional[str] = None, model: Optional[str] = None):
         self.api_key = api_key or ""
         self.model = model or DEFAULT_MODEL
-        self._client: Optional[openai.OpenAI] = None
-        if self.api_key:
+        self._client = None
+        if self.api_key and OPENAI_AVAILABLE:
             self._client = openai.OpenAI(api_key=self.api_key)
+        elif self.api_key and not OPENAI_AVAILABLE:
+            logger.warning("OpenAI API key was provided but the 'openai' package is not installed.")
 
     def set_api_key(self, api_key: str):
         self.api_key = api_key
-        self._client = openai.OpenAI(api_key=api_key) if api_key else None
+        if self.api_key and OPENAI_AVAILABLE:
+            self._client = openai.OpenAI(api_key=api_key)
+        else:
+            self._client = None
+            if self.api_key and not OPENAI_AVAILABLE:
+                logger.warning("OpenAI API key was provided but the 'openai' package is not installed.")
 
     def classify(self, ticket_id: str, subject: str, body: str) -> ClassificationResult:
         """Classify a support ticket using OpenAI API or heuristic fallback."""
